@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>ConfigurarMiCuenta</title>
+  <title>Buscar Cursos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -72,7 +72,7 @@
 					 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span><strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
-                                                    <a href="MantenimientoUsuario.jsp">Configuracion</a>
+							<a href="#">Configuracion</a>
 						</li>
 						<li class="divider">
 						</li>
@@ -122,44 +122,39 @@
 														<div class="col-sm-2">
 														</div>
 														<div class="col-sm-7">
-                                                                                                                        <form action="ActualizarUsuarioController" method="post" class="form-horizontal" role="form">
+																<form class="form-horizontal" role="form">
 																	  <div class="form-group form-group-lg">
 																	    <label class="col-sm-6 control-label" for="formGroupInputLarge"> Usuario : </label>
 																	   	 <div class="col-sm-6">
-																	      <input class="form-control" name="txtUsuario" type="text" id="formGroupInputLarge" placeholder="Ingresar Usuario ">
+																	      <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Ingresar Carrera ">
 																	    </div>
 																	  </div>
 																	  <div class="form-group form-group-lg">
-																	    <label class="col-sm-6 control-label" for="formGroupInputLarge"> Mail  : </label>
+																	    <label class="col-sm-6 control-label" for="formGroupInputLarge"> Correo  : </label>
 																	    <div class="col-sm-6">
-																	      <input class="form-control" name="txtEmail" type="text" id="formGroupInputLarge" placeholder=" Ingresar Mail ">
-																	    </div>
-																	  </div>
-																	  <div class="form-group form-group-lg">
-																	    <label class="col-sm-6 control-label" for="formGroupInputLarge"> Carrera :  </label>
-																	    <div class="col-sm-6">
-																	      <input class="form-control" name="txtCarrera" type="text" id="formGroupInputLarge" placeholder=" Ingresar Carrera">
+																	      <input class="form-control" type="text" id="formGroupInputLarge" placeholder=" Ingresar Ciclo ">
 																	    </div>
 																	  </div>
 																	  <div class="form-group form-group-lg">
 																	    <label class="col-sm-6 control-label" for="formGroupInputLarge"> Nueva Contraseña  </label>
 																	    <div class="col-sm-6">
-																	      <input class="form-control" name="txtNewClave" type="text" id="formGroupInputLarge" placeholder=" Ingresar Curso">
+																	      <input class="form-control" type="text" id="formGroupInputLarge" placeholder=" Ingresar Curso">
 																	    </div>
 																	  </div>
-                                                                                                                                           <center>
-                                                                                                                                               
-                                                                                                                                               <input type="submit" value="Actualizar Datos" />
-                                                                                                                                               <!--
-                                                                                                                                               <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+																	  <center>
+																	  		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
 																	  			Actualizar Datos
 																	  		</button>
-                                                                                                                                               -->
 																	  </center>
-                                                                                                                             </form>  
+
+																	  
+				
+																</form>
+
 
 																<!-- Button trigger modal -->
-                                                                                                                                <!-- Modal -->
+
+																<!-- Modal -->
 																<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 																  <div class="modal-dialog">
 																    <div class="modal-content">
@@ -169,16 +164,15 @@
 																      </div>
 																      <div class="modal-body">
 																         <label class="col-sm-6 control-label" for="formGroupInputLarge"> Contraseña Antigua  </label>
-																         <input class="form-control" name="txtClaveAnt" type="text" id="formGroupInputLarge" placeholder=" Ingresar Curso">
+																         <input class="form-control" type="text" id="formGroupInputLarge" placeholder=" Ingresar Curso">
 																      </div>
 																      <div class="modal-footer">
 																        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-																        <button type="submit" class="btn btn-primary">Confirmar </button>
+																        <button type="button" class="btn btn-primary">Confirmar </button>
 																      </div>
 																    </div>
 																  </div>
 																</div>
-                                                                                                                             
 																
 															
 														</div>
