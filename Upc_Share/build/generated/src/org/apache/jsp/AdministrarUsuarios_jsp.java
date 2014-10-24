@@ -162,7 +162,7 @@ public final class AdministrarUsuarios_jsp extends org.apache.jasper.runtime.Htt
       out.write("\t\t<div class=\"row clearfix alinear\">\r\n");
       out.write("\t\t\t<div class=\"col-xs-12 col-sm-3\">\r\n");
       out.write("\t\t\t\t<div class=\"row\">\r\n");
-      out.write("\t\t\t\t\t<div class=\"col-xs-12\">\r\n");
+      out.write("\t\t\t\t\t<div class=\"col-xs-10\">\r\n");
       out.write("\t\t\t\t\t\t<div class=\"panel panel-default\">\r\n");
       out.write("\t\t\t\t\t\t  <div class=\"panel-heading\">\r\n");
       out.write("\t\t\t\t\t\t    <h3 class=\"panel-title\"><center> Adminisitrar Cuentas de Usuario </center></h3>\r\n");
@@ -179,30 +179,26 @@ public final class AdministrarUsuarios_jsp extends org.apache.jasper.runtime.Htt
       out.write("\t\t\t\t\t</div>\r\n");
       out.write("\t\t\t\t</div>\r\n");
       out.write("\t\t\t</div>\r\n");
-      out.write("\t\t\t\t<div class=\"col-xs-12 col col-sm-6\">\r\n");
+      out.write("\t\t\t\t<div class=\"col-xs-16 col col-sm-6\">\r\n");
       out.write("\t\t\t\t\t<div class=\"row\">\r\n");
       out.write("\t\t\t\t\t\t<div class=\"panel panel-default\">\r\n");
       out.write("\t\t\t\t\t\t\t  <div class=\"panel-heading\">\r\n");
       out.write("\t\t\t\t\t\t\t  \t\t<center>\r\n");
-      out.write("\t\t\t\t\t\t\t  \t\t\t<h4> Listar </h4>\r\n");
+      out.write("\t\t\t\t\t\t\t  \t\t\t<h4> Relación de Usuarios </h4>\r\n");
       out.write("\t\t\t\t\t\t\t  \t\t</center>\r\n");
       out.write("\t\t\t\t\t\t\t  </div>\r\n");
       out.write("\t\t\t\t\t\t\t  <div class=\"panel-body\">\r\n");
       out.write("\t\t\t\t\t\t\t  \t\t<div class=\"row margen\">\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t<div class=\"row\">\r\n");
-      out.write("                                                                                            <div class=\"col-sm-1\"> </div>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-sm-10\">\r\n");
+      out.write("                                                                                            <div class=\"col-sm-1\"></div>  \r\n");
+      out.write("                                                                                           \r\n");
+      out.write("                                                                                            <div class=\"col-sm-10\">\r\n");
+      out.write("                                                                                                                         <form action=\"EliminarUsuarioController\" method=\"post\">\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<table class=\"table table-hover table-striped\">\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<thead class=\"tabla-titulo\">\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t#\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>\r\n");
+      out.write("                                                                                                                                                                <th>\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCodigo\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n");
-      out.write("\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUsuario\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\r\n");
@@ -210,15 +206,9 @@ public final class AdministrarUsuarios_jsp extends org.apache.jasper.runtime.Htt
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorreo\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    Carrera\t\t\t\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNombre\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</th>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</thead>\r\n");
+      out.write("                                                                                                                                                                        Acción \r\n");
+      out.write("                                                                                                                                                                </th>\r\n");
+      out.write("                                                                                                                                                </thead>\r\n");
       out.write("\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n");
       out.write("                                                                                                                                                                ");
@@ -228,7 +218,6 @@ public final class AdministrarUsuarios_jsp extends org.apache.jasper.runtime.Htt
                                                                                                                                                                 
       out.write("\r\n");
       out.write("                                                                                                                                                                <tr>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  <td>  </td>\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  <td> ");
       out.print(  u.getIdUsuario() );
       out.write("</td>\r\n");
@@ -238,11 +227,11 @@ public final class AdministrarUsuarios_jsp extends org.apache.jasper.runtime.Htt
       out.write("                                                                                                                                                                          <td> ");
       out.print(  u.getCorreo() );
       out.write("</td>\r\n");
-      out.write("                                                                                                                                                                          <td>  carrera  </td>\r\n");
-      out.write("                                                                                                                                                                          <td> ");
-      out.print(  u.getNombre() );
-      out.write("</td>\r\n");
-      out.write("                                                                                                                                                                          \r\n");
+      out.write("                                                                                                                                                                          <td>\r\n");
+      out.write("                                                                                                                                                                              <button type=\"submit\" name=\"txtCodigo\" value=\"");
+      out.print( u.getIdUsuario());
+      out.write("\" class=\"btn btn-primary btn-xs\">Eliminar</button>\r\n");
+      out.write("                                                                                                                                                                          </td>\r\n");
       out.write("                                                                                                                                                                          \r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t     \r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n");
@@ -250,15 +239,13 @@ public final class AdministrarUsuarios_jsp extends org.apache.jasper.runtime.Htt
       out.write("                                                                                                                                                                ");
 
                                                                                                                                                                     }
-                                                                                                                                                                        
+                                                                                                                                                                
       out.write("\r\n");
       out.write("\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \t\t\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tbody>\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\r\n");
+      out.write("                                                                                                                         </form>                                 \r\n");
       out.write("\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n");
       out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-sm-2\">\r\n");
@@ -282,7 +269,7 @@ public final class AdministrarUsuarios_jsp extends org.apache.jasper.runtime.Htt
       out.write("\r\n");
       out.write("\r\n");
       out.write("\t\t\t\t<div class=\"row\">\r\n");
-      out.write("\t\t\t\t\t<div class=\"col-xs-12\">\r\n");
+      out.write("\t\t\t\t\t<div class=\"col-xs-8\">\r\n");
       out.write("\t\t\t\t\t\t<div class=\"panel panel-info chat-widget-main\">\r\n");
       out.write("\t\t                        <div class=\"panel-heading\">\r\n");
       out.write("\t\t                            <h5>RECENT CHAT HISTORY</h5>\r\n");

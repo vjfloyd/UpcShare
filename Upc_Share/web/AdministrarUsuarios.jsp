@@ -114,7 +114,7 @@
 		<div class="row clearfix alinear">
 			<div class="col-xs-12 col-sm-3">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-10">
 						<div class="panel panel-default">
 						  <div class="panel-heading">
 						    <h3 class="panel-title"><center> Adminisitrar Cuentas de Usuario </center></h3>
@@ -131,7 +131,7 @@
 					</div>
 				</div>
 			</div>
-				<div class="col-xs-12 col col-sm-6">
+				<div class="col-xs-16 col col-sm-6">
 					<div class="row">
 						<div class="panel panel-default">
 							  <div class="panel-heading">
@@ -142,19 +142,15 @@
 							  <div class="panel-body">
 							  		<div class="row margen">
 											<div class="row">
-                                                                                            <div class="col-sm-1"> </div>
-														<div class="col-sm-10">
+                                                                                            <div class="col-sm-1"></div>  
+                                                                                           
+                                                                                            <div class="col-sm-10">
+                                                                                                                         <form action="EliminarUsuarioController" method="post">
 																	<table class="table table-hover table-striped">
 																		<thead class="tabla-titulo">
-																		
-																				<th>
-																					#
-																				</th>															
-																				<th>
+                                                                                                                                                                <th>
 																					Codigo
 																				</th>
-																				
-
 																				<th>
 																					Usuario
 																				</th>
@@ -162,15 +158,9 @@
 																					Correo
 																				</th>
 																				<th>
-																				    Carrera			
-																				</th>
-																				<th>
-																					Nombre
-																				</th>
-
-
-																			
-																		</thead>
+                                                                                                                                                                        Acción 
+                                                                                                                                                                </th>
+                                                                                                                                                </thead>
 
 																		<tbody>
                                                                                                                                                                 <%
@@ -178,27 +168,24 @@
                                                                                                                                                                     {
                                                                                                                                                                 %>
                                                                                                                                                                 <tr>
-																					  <td>  </td>
 																					  <td> <%=  u.getIdUsuario() %></td>
                                                                                                                                                                           <td> <%=  u.getApodo() %></td>
                                                                                                                                                                           <td> <%=  u.getCorreo() %></td>
-                                                                                                                                                                          <td>  carrera  </td>
-                                                                                                                                                                          <td> <%=  u.getNombre() %></td>
-                                                                                                                                                                          
+                                                                                                                                                                          <td>
+                                                                                                                                                                              <button type="submit" name="txtCodigo" value="<%= u.getIdUsuario()%>" class="btn btn-primary btn-xs">Eliminar</button>
+                                                                                                                                                                          </td>
                                                                                                                                                                           
 																					     
 																				</tr>
 
                                                                                                                                                                 <%
                                                                                                                                                                     }
-                                                                                                                                                                        %>
+                                                                                                                                                                %>
 
 																		 		
 																		</tbody>
-																				
-																				
-																				
 																	</table>
+                                                                                                                         </form>                                 
 
 														</div>
 														<div class="col-sm-2">
@@ -222,7 +209,7 @@
 
 
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-8">
 						<div class="panel panel-info chat-widget-main">
 		                        <div class="panel-heading">
 		                            <h5>RECENT CHAT HISTORY</h5>
