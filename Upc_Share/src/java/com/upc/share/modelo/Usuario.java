@@ -9,21 +9,9 @@ public class Usuario {
     private String apellidoMat;
     private String nombre;
     private String correo;
-    private Integer tipoUsuario;
+    private TipoUsuario tipoUsuario;
+    private Carrera carrera;
 
-   
-    private String carrera;
-    
-    public String getCarrera() {
-        return carrera;
-    }
-
-    public void setCarrera(String carrera) {
-        this.carrera = carrera;
-    }
-
-    public Usuario() {
-    }
     public Integer getIdUsuario() {
         return idUsuario;
     }
@@ -79,13 +67,21 @@ public class Usuario {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-    public Integer getTipoUsuario() {
+
+    public TipoUsuario getTipoUsuario() {
         return tipoUsuario;
     }
 
-    public void setTipoUsuario(Integer tipoUsuario) {
+    public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
-    }   
-    
+    }
+
+    public Carrera getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(Carrera carrera) {
+        this.carrera = carrera;
+    }
     
 }

@@ -74,7 +74,7 @@
 
     <div class="row clearfix alinear">
 
-            <form role="form"  action="UsuarioController" method="post" >
+            <form role="form"  action="AgregarUsuarioController" method="post" >
 
             <div class="col-lg-8">
               

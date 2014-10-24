@@ -164,6 +164,7 @@
 													<div class="col-sm-1">
 													</div>
 														<div class="col-sm-10">
+                                                                                                                               
 																	<table class="table table-hover table-striped">
 																		<thead class="tabla-titulo">
 																		
@@ -173,8 +174,6 @@
 																				<th>
 																					Curso
 																				</th>
-																				
-
 																				<th>
 																					Ciclo Académico
 																				</th>
@@ -219,10 +218,8 @@
 																					  </td>											     
 																				</tr>	
 																		</tbody>
-																				
-																				
-																				
-																	</table>
+                                                                                                                                    </table>
+                                                                                                                               
 
 														</div>
 
